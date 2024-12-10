@@ -1,3 +1,6 @@
 {
-  "item.shrubbery.pruner": "Pruner"
+  "block.shrubbery.azalea_hedge": "Azalea Hedge",
+  "block.shrubbery.bush": "Bush",
+  "item.shrubbery.pruner": "Pruner",
+  "shrubbery.creativetab": "Shrubbery"
 }

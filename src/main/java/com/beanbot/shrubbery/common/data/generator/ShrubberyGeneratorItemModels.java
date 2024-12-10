@@ -1,6 +1,7 @@
 package com.beanbot.shrubbery.common.data.generator;
 
 import com.beanbot.shrubbery.Shrubbery;
+import com.beanbot.shrubbery.common.blocks.ShrubberyBlocks;
 import com.beanbot.shrubbery.common.items.ShrubberyItems;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
@@ -14,5 +15,8 @@ public class ShrubberyGeneratorItemModels extends ItemModelProvider {
     @Override
     protected void registerModels() {
         singleTexture(ShrubberyItems.PRUNER.getId().getPath(), mcLoc("item/generated"), "layer0", modLoc("item/pruner"));
+
+        simpleBlockItem(ShrubberyBlocks.AZALEA_HEDGE.get());
+        singleTexture(ShrubberyItems.BUSH.getId().getPath(), mcLoc("item/generated"), "layer0", modLoc("block/bush"));
     }
 }

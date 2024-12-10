@@ -21,6 +21,12 @@ public class ShrubberyGenerator {
 
         generator.addProvider(event.includeClient(), new ShrubberyGeneratorLanguage(packOutput));
 
+        generator.addProvider(event.includeClient(), new ShrubberyGeneratorBlockStates(packOutput, event.getExistingFileHelper()));
+
         generator.addProvider(event.includeClient(), new ShrubberyGeneratorItemModels(packOutput, event.getExistingFileHelper()));
+
+        generator.addProvider(event.includeClient(), new ShrubberyGeneratorRecipes(packOutput, lookupProvider));
+
+        generator.addProvider(event.includeClient(), new ShrubberyGeneratorLootTables(packOutput, lookupProvider));
     }
 }
