@@ -1,5 +1,7 @@
 package com.beanbot.shrubbery;
 
+import com.beanbot.shrubbery.client.creative.ShrubberyCreativeModeTab;
+import com.beanbot.shrubbery.common.blocks.ShrubberyBlocks;
 import com.beanbot.shrubbery.common.items.ShrubberyItems;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
@@ -17,6 +19,8 @@ public class Shrubbery {
     public Shrubbery(IEventBus bus, Dist dist) {
 
         ShrubberyItems.ITEMS.register(bus);
+        ShrubberyBlocks.BLOCKS.register(bus);
+        ShrubberyCreativeModeTab.register(bus);
 
     }
 
