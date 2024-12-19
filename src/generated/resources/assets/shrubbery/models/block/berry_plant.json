@@ -2,8 +2,9 @@
   "parent": "minecraft:block/template_azalea",
   "render_type": "minecraft:cutout",
   "textures": {
-    "plant": "shrubbery:block/berry_plant",
-    "side": "shrubbery:block/berry_plant_inside",
+    "particle": "shrubbery:block/berry_plant",
+    "plant": "shrubbery:block/berry_plant_inside",
+    "side": "shrubbery:block/berry_plant",
     "top": "shrubbery:block/berry_plant_top"
   }
 }

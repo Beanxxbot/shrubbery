@@ -26,13 +26,14 @@ public class ShrubberyGeneratorBlockStates extends BlockStateProvider {
     protected void registerStatesAndModels() {
 
         axisBlock(ShrubberyBlocks.AZALEA_HEDGE.get(), modLoc("block/azalea_hedge"), mcLoc("block/azalea_top"));
+        axisBlock(ShrubberyBlocks.FLOWERING_AZALEA_HEDGE.get(), modLoc("block/flowering_azalea_hedge"), mcLoc("block/flowering_azalea_top"));
         axisBlock(ShrubberyBlocks.BERRY_HEDGE.get(), modLoc("block/berry_hedge"), modLoc("block/berry_plant_top"));
         axisBlock(ShrubberyBlocks.FLOWERING_BERRY_HEDGE.get(), modLoc("block/flowering_berry_hedge"), modLoc("block/flowering_berry_plant_top"));
 
         simpleBlock(ShrubberyBlocks.BERRY_BUSH.get(), models().cross(ShrubberyBlocks.BERRY_BUSH.getId().getPath(), mcLoc("block/sweet_berry_bush_stage1" )).renderType(RenderType.cutout().name));
         simpleBlock(ShrubberyBlocks.FLOWERING_BERRY_BUSH.get(), models().cross(ShrubberyBlocks.FLOWERING_BERRY_BUSH.getId().getPath(), mcLoc("block/sweet_berry_bush_stage3" )).renderType(RenderType.cutout().name));
-        simpleBlock(ShrubberyBlocks.BERRY_PLANT.get(), models().withExistingParent(ShrubberyBlocks.BERRY_PLANT.getId().getPath(), mcLoc("block/template_azalea")).texture("top", modLoc("block/berry_plant_top")).texture("side",  modLoc("block/berry_plant_inside")).texture("plant", modLoc("block/berry_plant")).renderType(RenderType.cutout().name));
-        simpleBlock(ShrubberyBlocks.FLOWERING_BERRY_PLANT.get(), models().withExistingParent(ShrubberyBlocks.FLOWERING_BERRY_PLANT.getId().getPath(), mcLoc("block/template_azalea")).texture("top", modLoc("block/flowering_berry_plant_top")).texture("side",  modLoc("block/berry_plant_inside")).texture("plant", modLoc("block/flowering_berry_plant" )).renderType(RenderType.cutout().name));
+        simpleBlock(ShrubberyBlocks.BERRY_PLANT.get(), models().withExistingParent(ShrubberyBlocks.BERRY_PLANT.getId().getPath(), mcLoc("block/template_azalea")).texture("top", modLoc("block/berry_plant_top")).texture("side",  modLoc("block/berry_plant")).texture("plant", modLoc("block/berry_plant_inside")).texture("particle", "block/berry_plant").renderType(RenderType.cutout().name));
+        simpleBlock(ShrubberyBlocks.FLOWERING_BERRY_PLANT.get(), models().withExistingParent(ShrubberyBlocks.FLOWERING_BERRY_PLANT.getId().getPath(), mcLoc("block/template_azalea")).texture("top", modLoc("block/flowering_berry_plant_top")).texture("side",  modLoc("block/flowering_berry_plant")).texture("plant", modLoc("block/flowering_berry_plant_inside" )).texture("particle", "block/flowering_berry_plant").renderType(RenderType.cutout().name));
 
         simpleBlock(ShrubberyBlocks.AZALEA_BUSH.get(), models().cross(ShrubberyBlocks.AZALEA_BUSH.getId().getPath(), modLoc("block/azalea_bush" )).renderType(RenderType.cutout().name));
         simpleBlock(ShrubberyBlocks.FLOWERING_AZALEA_BUSH.get(), models().cross(ShrubberyBlocks.FLOWERING_AZALEA_BUSH.getId().getPath(), modLoc("block/flowering_azalea_bush" )).renderType(RenderType.cutout().name));
