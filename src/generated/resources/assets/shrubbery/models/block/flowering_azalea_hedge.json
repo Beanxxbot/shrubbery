@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "minecraft:block/flowering_azalea_top",
+    "side": "shrubbery:block/flowering_azalea_hedge"
+  }
+}

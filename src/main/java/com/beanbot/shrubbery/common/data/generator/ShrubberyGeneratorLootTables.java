@@ -37,6 +37,7 @@ public class ShrubberyGeneratorLootTables extends LootTableProvider {
         protected void generate() {
 
             dropSelf(ShrubberyBlocks.AZALEA_HEDGE.get());
+            dropSelf(ShrubberyBlocks.FLOWERING_AZALEA_HEDGE.get());
             dropSelf(ShrubberyBlocks.BERRY_HEDGE.get());
             dropSelf(ShrubberyBlocks.FLOWERING_BERRY_HEDGE.get());
 

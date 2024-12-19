@@ -16,6 +16,7 @@ public class ShrubberyGeneratorItemModels extends ItemModelProvider {
     protected void registerModels() {
 
         simpleBlockItem(ShrubberyBlocks.AZALEA_HEDGE.get());
+        simpleBlockItem(ShrubberyBlocks.FLOWERING_AZALEA_HEDGE.get());
         simpleBlockItem(ShrubberyBlocks.BERRY_HEDGE.get());
         simpleBlockItem(ShrubberyBlocks.FLOWERING_BERRY_HEDGE.get());
 
@@ -30,6 +31,5 @@ public class ShrubberyGeneratorItemModels extends ItemModelProvider {
 
         singleTexture(ShrubberyItems.PRUNER.getId().getPath(), mcLoc("item/generated"), "layer0", modLoc("item/pruner"));
         singleTexture(ShrubberyItems.HEDGE_TRIMMER.getId().getPath(), mcLoc("item/generated"), "layer0", modLoc("item/hedge_trimmer"));
-
     }
 }

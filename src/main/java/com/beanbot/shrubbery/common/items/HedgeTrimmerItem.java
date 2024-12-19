@@ -50,6 +50,10 @@ public class HedgeTrimmerItem extends Item{
 
                 }else if(blockState.is(ShrubberyBlocks.FLOWERING_AZALEA_BUSH.get())){
                     bushBlock = Blocks.FLOWERING_AZALEA;
+                }else if(blockState.is(ShrubberyBlocks.BERRY_BUSH.get())){
+                    bushBlock = ShrubberyBlocks.BERRY_PLANT.get();
+                }else if(blockState.is(ShrubberyBlocks.FLOWERING_BERRY_BUSH.get())){
+                    bushBlock = ShrubberyBlocks.FLOWERING_BERRY_PLANT.get();
                 }
 
                 if (bushBlock != null){
