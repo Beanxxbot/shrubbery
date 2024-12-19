@@ -1,10 +1,13 @@
 {
   "block.shrubbery.azalea_bush": "Azalea Bush",
+  "block.shrubbery.azalea_flower": "Azalea Flower",
   "block.shrubbery.azalea_hedge": "Azalea Hedge",
   "block.shrubbery.berry_bush": "Berry Bush",
+  "block.shrubbery.berry_hedge": "Berry Hedge",
   "block.shrubbery.berry_plant": "Berry Plant",
   "block.shrubbery.flowering_azalea_bush": "Flowering Azalea Bush",
   "block.shrubbery.flowering_berry_bush": "Flowering Berry Bush",
+  "block.shrubbery.flowering_berry_hedge": "Flowering Berry Hedge",
   "block.shrubbery.flowering_berry_plant": "Flowering Berry Plant",
   "item.shrubbery.hedge_trimmer": "Hedge Trimmer",
   "item.shrubbery.pruner": "Pruner",

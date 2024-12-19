@@ -32,5 +32,15 @@ public class ShrubberyGeneratorRecipes extends RecipeProvider {
                 .unlockedBy("has_iron_ingot", InventoryChangeTrigger.TriggerInstance.hasItems(Items.IRON_INGOT))
                 .save(output);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS,ShrubberyItems.HEDGE_TRIMMER.get())
+                .pattern("  I")
+                .pattern("SI ")
+                .pattern(" S ")
+                .define('S', Tags.Items.RODS_WOODEN)
+                .define('I', Items.IRON_INGOT)
+                .group(Shrubbery.MODID)
+                .unlockedBy("has_iron_ingot", InventoryChangeTrigger.TriggerInstance.hasItems(Items.IRON_INGOT))
+                .save(output);
+
     }
 }

@@ -15,6 +15,8 @@ public class ShrubberyItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Shrubbery.MODID);
 
     public static final DeferredHolder<Item, BlockItem> AZALEA_HEDGE = ITEMS.registerSimpleBlockItem(ShrubberyBlocks.AZALEA_HEDGE);
+    public static final DeferredHolder<Item, BlockItem> BERRY_HEDGE = ITEMS.registerSimpleBlockItem(ShrubberyBlocks.BERRY_HEDGE);
+    public static final DeferredHolder<Item, BlockItem> FLOWERING_BERRY_HEDGE = ITEMS.registerSimpleBlockItem(ShrubberyBlocks.FLOWERING_BERRY_HEDGE);
 
     public static final DeferredHolder<Item, BlockItem> BERRY_BUSH = ITEMS.registerSimpleBlockItem(ShrubberyBlocks.BERRY_BUSH);
     public static final DeferredHolder<Item, BlockItem> FLOWERING_BERRY_BUSH = ITEMS.registerSimpleBlockItem(ShrubberyBlocks.FLOWERING_BERRY_BUSH);
@@ -23,6 +25,7 @@ public class ShrubberyItems {
 
     public static final DeferredHolder<Item, BlockItem> AZALEA_BUSH = ITEMS.registerSimpleBlockItem(ShrubberyBlocks.AZALEA_BUSH);
     public static final DeferredHolder<Item, BlockItem> FLOWERING_AZALEA_BUSH = ITEMS.registerSimpleBlockItem(ShrubberyBlocks.FLOWERING_AZALEA_BUSH);
+    public static final DeferredHolder<Item, BlockItem> AZALEA_FLOWER = ITEMS.registerSimpleBlockItem(ShrubberyBlocks.AZALEA_FLOWER);
 
     public static final DeferredHolder<Item, PrunerItem> PRUNER = ITEMS.register("pruner", PrunerItem::new);
     public static final DeferredHolder<Item, HedgeTrimmerItem> HEDGE_TRIMMER = ITEMS.register("hedge_trimmer", HedgeTrimmerItem::new);

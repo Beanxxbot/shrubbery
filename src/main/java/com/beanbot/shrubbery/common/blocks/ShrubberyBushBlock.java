@@ -37,7 +37,6 @@ public class ShrubberyBushBlock extends BushBlock {
         super(properties);
     }
 
-
     @Override
     protected VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
         return SHAPE;

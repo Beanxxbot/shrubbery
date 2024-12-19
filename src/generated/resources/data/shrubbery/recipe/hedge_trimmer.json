@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "shrubbery",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "S": {
+      "tag": "c:rods/wooden"
+    }
+  },
+  "pattern": [
+    "  I",
+    "SI ",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "shrubbery:hedge_trimmer"
+  }
+}

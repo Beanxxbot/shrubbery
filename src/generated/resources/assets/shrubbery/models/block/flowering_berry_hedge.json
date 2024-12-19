@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "shrubbery:block/flowering_berry_plant_top",
+    "side": "shrubbery:block/flowering_berry_hedge"
+  }
+}

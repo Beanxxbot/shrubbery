@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/cube_column",
+  "parent": "minecraft:block/cube_column_horizontal",
   "textures": {
     "end": "minecraft:block/azalea_top",
     "side": "shrubbery:block/azalea_hedge"

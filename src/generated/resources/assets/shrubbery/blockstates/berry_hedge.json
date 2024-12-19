@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "shrubbery:block/berry_hedge_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "shrubbery:block/berry_hedge"
+    },
+    "axis=z": {
+      "model": "shrubbery:block/berry_hedge_horizontal",
+      "x": 90
+    }
+  }
+}

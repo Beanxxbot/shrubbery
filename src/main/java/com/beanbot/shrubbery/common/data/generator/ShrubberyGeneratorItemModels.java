@@ -16,16 +16,17 @@ public class ShrubberyGeneratorItemModels extends ItemModelProvider {
     protected void registerModels() {
 
         simpleBlockItem(ShrubberyBlocks.AZALEA_HEDGE.get());
+        simpleBlockItem(ShrubberyBlocks.BERRY_HEDGE.get());
+        simpleBlockItem(ShrubberyBlocks.FLOWERING_BERRY_HEDGE.get());
 
-        simpleBlockItem(ShrubberyBlocks.BERRY_PLANT.get());
-        simpleBlockItem(ShrubberyBlocks.FLOWERING_BERRY_PLANT.get());
         singleTexture(ShrubberyItems.BERRY_BUSH.getId().getPath(), mcLoc("item/generated"), "layer0", mcLoc("block/sweet_berry_bush_stage1"));
         singleTexture(ShrubberyItems.FLOWERING_BERRY_BUSH.getId().getPath(), mcLoc("item/generated"), "layer0", mcLoc("block/sweet_berry_bush_stage3"));
-        //singleTexture(ShrubberyItems.BERRY_PLANT.getId().getPath(), mcLoc("item/generated"), "layer0", modLoc("block/berry_plant"));
-        //singleTexture(ShrubberyItems.FLOWERING_BERRY_PLANT.getId().getPath(), mcLoc("item/generated"), "layer0", modLoc("block/flowering_berry_plant"));
+        simpleBlockItem(ShrubberyBlocks.BERRY_PLANT.get());
+        simpleBlockItem(ShrubberyBlocks.FLOWERING_BERRY_PLANT.get());
 
         singleTexture(ShrubberyItems.AZALEA_BUSH.getId().getPath(), mcLoc("item/generated"), "layer0", modLoc("block/azalea_bush"));
         singleTexture(ShrubberyItems.FLOWERING_AZALEA_BUSH.getId().getPath(), mcLoc("item/generated"), "layer0", modLoc("block/flowering_azalea_bush"));
+        singleTexture(ShrubberyItems.AZALEA_FLOWER.getId().getPath(), mcLoc("item/generated"), "layer0", modLoc("block/azalea_flower"));
 
         singleTexture(ShrubberyItems.PRUNER.getId().getPath(), mcLoc("item/generated"), "layer0", modLoc("item/pruner"));
         singleTexture(ShrubberyItems.HEDGE_TRIMMER.getId().getPath(), mcLoc("item/generated"), "layer0", modLoc("item/hedge_trimmer"));
