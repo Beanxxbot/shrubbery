@@ -1,7 +1,9 @@
 {
-  "parent": "minecraft:block/cube_top",
+  "parent": "minecraft:block/template_azalea",
+  "render_type": "minecraft:cutout",
   "textures": {
-    "side": "shrubbery:block/berry_plant",
+    "plant": "shrubbery:block/berry_plant",
+    "side": "shrubbery:block/berry_plant_inside",
     "top": "shrubbery:block/berry_plant_top"
   }
 }

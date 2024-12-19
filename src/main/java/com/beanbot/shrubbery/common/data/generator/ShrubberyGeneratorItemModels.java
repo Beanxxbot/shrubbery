@@ -17,8 +17,8 @@ public class ShrubberyGeneratorItemModels extends ItemModelProvider {
 
         simpleBlockItem(ShrubberyBlocks.AZALEA_HEDGE.get());
 
-        singleTexture(ShrubberyItems.BUSH.getId().getPath(), mcLoc("item/generated"), "layer0", modLoc("block/bush"));
-        singleTexture(ShrubberyItems.BERRY_BUSH.getId().getPath(), mcLoc("item/generated"), "layer0", mcLoc("item/sweet_berries"));
+        singleTexture(ShrubberyItems.BUSH.getId().getPath(), mcLoc("item/generated"), "layer0", mcLoc("block/sweet_berry_bush_stage1"));
+        singleTexture(ShrubberyItems.BERRY_BUSH.getId().getPath(), mcLoc("item/generated"), "layer0", mcLoc("block/sweet_berry_bush_stage3"));
         singleTexture(ShrubberyItems.BERRY_PLANT.getId().getPath(), mcLoc("item/generated"), "layer0", modLoc("block/berry_plant"));
         singleTexture(ShrubberyItems.FLOWERING_BERRY_PLANT.getId().getPath(), mcLoc("item/generated"), "layer0", modLoc("block/flowering_berry_plant"));
 

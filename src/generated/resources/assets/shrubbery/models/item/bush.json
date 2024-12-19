@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "shrubbery:block/bush"
+    "layer0": "minecraft:block/sweet_berry_bush_stage1"
   }
 }
