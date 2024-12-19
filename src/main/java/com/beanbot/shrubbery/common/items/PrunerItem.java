@@ -30,34 +30,28 @@ public class PrunerItem extends Item {
 
         if (blockState != null) {
 
-            BlockState nBlock = null;
+            Block nBlock = null;
 
             if (blockState.getBlock() instanceof GrassBlock) {
-                nBlock = Blocks.DIRT.defaultBlockState();
-
-            }else if (blockState.getBlock() instanceof SweetBerryBushBlock) {
-                if (blockState.getValue(SweetBerryBushBlock.AGE) >= 1){
-                    nBlock = ShrubberyBlocks.BUSH.get().defaultBlockState();
-
-                }
+                nBlock = Blocks.DIRT;
 
             }else if (blockState.is(Blocks.AZALEA)) {
-                nBlock = ShrubberyBlocks.AZALEA_BUSH.get().defaultBlockState();
+                nBlock = ShrubberyBlocks.AZALEA_BUSH.get();
 
             }else if (blockState.is(Blocks.FLOWERING_AZALEA)){
-                nBlock = ShrubberyBlocks.FLOWERING_AZALEA_BUSH.get().defaultBlockState();
+                nBlock = ShrubberyBlocks.FLOWERING_AZALEA_BUSH.get();
 
             }else if (blockState.is(ShrubberyBlocks.BERRY_PLANT.get())){
-                nBlock = ShrubberyBlocks.BERRY_BUSH.get().defaultBlockState();
+                nBlock = ShrubberyBlocks.BERRY_BUSH.get();
 
             }else if (blockState.is(ShrubberyBlocks.FLOWERING_BERRY_PLANT.get())){
-                nBlock = Blocks.SWEET_BERRY_BUSH.defaultBlockState().setValue(SweetBerryBushBlock.AGE,3);
+                nBlock = ShrubberyBlocks.FLOWERING_BERRY_BUSH.get();
 
             }
 
             if (nBlock != null){
 
-                level.setBlockAndUpdate(blockPos, nBlock);
+                level.setBlockAndUpdate(blockPos, nBlock.defaultBlockState());
 
                 if (!level.isClientSide){
                     Player player = context.getPlayer();

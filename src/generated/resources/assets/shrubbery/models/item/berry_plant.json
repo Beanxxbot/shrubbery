@@ -1,6 +1,3 @@
 {
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "shrubbery:block/berry_plant"
-  }
+  "parent": "shrubbery:block/berry_plant"
 }

@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "shrubbery:bush"
+          "name": "shrubbery:flowering_berry_plant"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "shrubbery:blocks/bush"
+  "random_sequence": "shrubbery:blocks/flowering_berry_plant"
 }

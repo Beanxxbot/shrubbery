@@ -35,26 +35,33 @@ public class HedgeTrimmerItem extends Item{
 
             if (blockState != null) {
 
+                Block bushBlock = null;
+
                 if (blockState.getBlock() instanceof SweetBerryBushBlock) {
 
-                    DeferredHolder<Block, ShrubberyBushBlock> bushBlock = switch (blockState.getValue(SweetBerryBushBlock.AGE)) {
-                        case 1 -> ShrubberyBlocks.BERRY_PLANT;
-                        case 3 -> ShrubberyBlocks.FLOWERING_BERRY_PLANT;
+                    bushBlock = switch (blockState.getValue(SweetBerryBushBlock.AGE)) {
+                        case 1 -> ShrubberyBlocks.BERRY_PLANT.get();
+                        case 3 -> ShrubberyBlocks.FLOWERING_BERRY_PLANT.get();
                         default -> null;
                     };
 
-                    if (bushBlock != null){
+                }else if(blockState.is(ShrubberyBlocks.AZALEA_BUSH.get())){
+                    bushBlock = Blocks.AZALEA;
 
-                        level.setBlockAndUpdate(blockPos, bushBlock.get().defaultBlockState());
+                }else if(blockState.is(ShrubberyBlocks.FLOWERING_AZALEA_BUSH.get())){
+                    bushBlock = Blocks.FLOWERING_AZALEA;
+                }
 
-                        if (!level.isClientSide){
-                            Player player = context.getPlayer();
-                            player.getItemInHand(context.getHand()).hurtAndBreak(1, player, LivingEntity.getSlotForHand(context.getHand()));
-                        }
+                if (bushBlock != null){
 
-                        return InteractionResult.sidedSuccess(level.isClientSide);
+                    level.setBlockAndUpdate(blockPos, bushBlock.defaultBlockState());
 
+                    if (!level.isClientSide){
+                        Player player = context.getPlayer();
+                        player.getItemInHand(context.getHand()).hurtAndBreak(1, player, LivingEntity.getSlotForHand(context.getHand()));
                     }
+
+                    return InteractionResult.sidedSuccess(level.isClientSide);
 
                 }
             }

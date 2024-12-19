@@ -1,6 +1,7 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cross",
+  "render_type": "minecraft:cutout",
   "textures": {
-    "all": "shrubbery:block/flowering_azalea_bush"
+    "cross": "shrubbery:block/flowering_azalea_bush"
   }
 }

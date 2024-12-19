@@ -16,8 +16,8 @@ public class ShrubberyGeneratorLanguage extends LanguageProvider {
 
         addBlock(ShrubberyBlocks.AZALEA_HEDGE, "Azalea Hedge");
 
-        addBlock(ShrubberyBlocks.BUSH, "Bush");
         addBlock(ShrubberyBlocks.BERRY_BUSH, "Berry Bush");
+        addBlock(ShrubberyBlocks.FLOWERING_BERRY_BUSH, "Flowering Berry Bush");
         addBlock(ShrubberyBlocks.BERRY_PLANT, "Berry Plant");
         addBlock(ShrubberyBlocks.FLOWERING_BERRY_PLANT, "Flowering Berry Plant");
 

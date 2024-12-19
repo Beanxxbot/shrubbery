@@ -16,8 +16,8 @@ public class ShrubberyItems {
 
     public static final DeferredHolder<Item, BlockItem> AZALEA_HEDGE = ITEMS.registerSimpleBlockItem(ShrubberyBlocks.AZALEA_HEDGE);
 
-    public static final DeferredHolder<Item, BlockItem> BUSH = ITEMS.registerSimpleBlockItem(ShrubberyBlocks.BUSH);
     public static final DeferredHolder<Item, BlockItem> BERRY_BUSH = ITEMS.registerSimpleBlockItem(ShrubberyBlocks.BERRY_BUSH);
+    public static final DeferredHolder<Item, BlockItem> FLOWERING_BERRY_BUSH = ITEMS.registerSimpleBlockItem(ShrubberyBlocks.FLOWERING_BERRY_BUSH);
     public static final DeferredHolder<Item, BlockItem> BERRY_PLANT = ITEMS.registerSimpleBlockItem(ShrubberyBlocks.BERRY_PLANT);
     public static final DeferredHolder<Item, BlockItem> FLOWERING_BERRY_PLANT = ITEMS.registerSimpleBlockItem(ShrubberyBlocks.FLOWERING_BERRY_PLANT);
 

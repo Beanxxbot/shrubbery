@@ -3,9 +3,9 @@
   "block.shrubbery.azalea_hedge": "Azalea Hedge",
   "block.shrubbery.berry_bush": "Berry Bush",
   "block.shrubbery.berry_plant": "Berry Plant",
-  "block.shrubbery.bush": "Bush",
   "block.shrubbery.flowering_azalea_bush": "Flowering Azalea Bush",
-  "block.shrubbery.flowering_sweet_berry_plant": "Flowering Berry Plant",
+  "block.shrubbery.flowering_berry_bush": "Flowering Berry Bush",
+  "block.shrubbery.flowering_berry_plant": "Flowering Berry Plant",
   "item.shrubbery.hedge_trimmer": "Hedge Trimmer",
   "item.shrubbery.pruner": "Pruner",
   "shrubbery.creativetab": "Shrubbery"

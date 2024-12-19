@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/template_azalea",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "plant": "shrubbery:block/flowering_berry_plant",
+    "side": "shrubbery:block/berry_plant_inside",
+    "top": "shrubbery:block/flowering_berry_plant_top"
+  }
+}
