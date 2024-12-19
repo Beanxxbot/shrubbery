@@ -13,10 +13,20 @@ public class ShrubberyGeneratorLanguage extends LanguageProvider {
 
     @Override
     protected void addTranslations() {
-        addItem(ShrubberyItems.PRUNER, "Pruner");
 
         addBlock(ShrubberyBlocks.AZALEA_HEDGE, "Azalea Hedge");
+
         addBlock(ShrubberyBlocks.BUSH, "Bush");
+        addBlock(ShrubberyBlocks.BERRY_BUSH, "Berry Bush");
+        addBlock(ShrubberyBlocks.BERRY_PLANT, "Berry Plant");
+        addBlock(ShrubberyBlocks.FLOWERING_BERRY_PLANT, "Flowering Berry Plant");
+
+        addBlock(ShrubberyBlocks.AZALEA_BUSH, "Azalea Bush");
+        addBlock(ShrubberyBlocks.FLOWERING_AZALEA_BUSH, "Flowering Azalea Bush");
+
+        addItem(ShrubberyItems.PRUNER, "Pruner");
+        addItem(ShrubberyItems.HEDGE_TRIMMER, "Hedge Trimmer");
+
 
         add(Shrubbery.MODID + ".creativetab","Shrubbery");
     }

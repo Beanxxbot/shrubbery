@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "shrubbery:block/flowering_azalea_bush"
+  }
+}

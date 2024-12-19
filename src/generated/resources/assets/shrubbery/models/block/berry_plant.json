@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_top",
+  "textures": {
+    "side": "shrubbery:block/berry_plant",
+    "top": "shrubbery:block/berry_plant_top"
+  }
+}

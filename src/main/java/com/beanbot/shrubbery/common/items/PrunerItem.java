@@ -12,10 +12,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.BushBlock;
-import net.minecraft.world.level.block.GrassBlock;
-import net.minecraft.world.level.block.SweetBerryBushBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
 
 public class PrunerItem extends Item {
@@ -33,21 +30,42 @@ public class PrunerItem extends Item {
 
         if (blockState != null) {
 
+            BlockState nBlock = null;
+
             if (blockState.getBlock() instanceof GrassBlock) {
-                level.setBlockAndUpdate(blockPos, Blocks.DIRT.defaultBlockState());
-                return InteractionResult.sidedSuccess(level.isClientSide);
+                nBlock = Blocks.DIRT.defaultBlockState();
+
             }else if (blockState.getBlock() instanceof SweetBerryBushBlock) {
-
                 if (blockState.getValue(SweetBerryBushBlock.AGE) >= 1){
-                    level.setBlockAndUpdate(blockPos, ShrubberyBlocks.BUSH.get().defaultBlockState());
+                    nBlock = ShrubberyBlocks.BUSH.get().defaultBlockState();
 
-                    if (!level.isClientSide){
-                        Player player = context.getPlayer();
-                        player.getItemInHand(context.getHand()).hurtAndBreak(1, player, LivingEntity.getSlotForHand(context.getHand()));
-                    }
-
-                    return InteractionResult.sidedSuccess(level.isClientSide);
                 }
+
+            }else if (blockState.is(Blocks.AZALEA)) {
+                nBlock = ShrubberyBlocks.AZALEA_BUSH.get().defaultBlockState();
+
+            }else if (blockState.is(Blocks.FLOWERING_AZALEA)){
+                nBlock = ShrubberyBlocks.FLOWERING_AZALEA_BUSH.get().defaultBlockState();
+
+            }else if (blockState.is(ShrubberyBlocks.BERRY_PLANT.get())){
+                nBlock = ShrubberyBlocks.BERRY_BUSH.get().defaultBlockState();
+
+            }else if (blockState.is(ShrubberyBlocks.FLOWERING_BERRY_PLANT.get())){
+                nBlock = Blocks.SWEET_BERRY_BUSH.defaultBlockState().setValue(SweetBerryBushBlock.AGE,3);
+
+            }
+
+            if (nBlock != null){
+
+                level.setBlockAndUpdate(blockPos, nBlock);
+
+                if (!level.isClientSide){
+                    Player player = context.getPlayer();
+                    player.getItemInHand(context.getHand()).hurtAndBreak(1, player, LivingEntity.getSlotForHand(context.getHand()));
+                }
+
+                return InteractionResult.sidedSuccess(level.isClientSide);
+
             }
         }
         return InteractionResult.PASS;
